@@ -1,0 +1,37 @@
+//Handles routing among partials and home
+var portfolio=angular.module('portfolio',['ngRoute','ngAnimate']);
+portfolio.config(function($routeProvider){
+	$routeProvider
+		.when('/',
+			{
+				templateUrl:'partials/intro.html',
+				controller:'Portfolio'
+			})
+		.when('/profile',
+			{
+				templateUrl:'partials/profile.html'
+			})
+		.when('/skills',
+			{
+				templateUrl:'partials/skills.html'
+			})
+		.when('/contact',
+			{
+				templateUrl:'partials/contact.html'
+			})
+		.when('/lamp',
+			{
+				templateUrl:'partials/lamp.html'
+			})
+		.when('/mean',
+			{
+				templateUrl:'partials/mean.html'
+			})
+		.when('/rails',
+			{
+				templateUrl:'partials/rails.html'
+			})
+		.otherwise({
+			redirectTo:'/'
+		});
+});

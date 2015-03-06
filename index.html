@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UL</title>
+
+</head>
+<body ng-app="portfolio">
+	<div id="site_links">
+		<div id="navbar_me" class="nestled">
+			<h4>Me</h4>
+			<a href="#/profile"><h4>Profile</h4></a>
+			<a href="#/skills"><h4>Skills</h4></a>
+			<a href="#/contact"><h4>Contact</h4></a>
+		</div>
+		<div id="navbar_projects" class="nestled">
+			<h4>Projects</h4>
+			<a href="#/lamp"><h4>[LAMP stack]</h4></a>
+			<a href="#/mean"><h4>[MEAN stack]</h4></a>
+			<a href="#/rails"><h4>[Ruby on Rails]</h4></a>
+		</div>
+		<div id="navbar_links" class="nestled">
+			<h4>Links</h4>
+			<a href="https://github.com/UlyssesLin" target="_blank"><h4>GitHub</h4></a>
+			<a href="https://www.linkedin.com/in/ulysseslin" target="_blank"><h4>LinkedIn</h4></a>
+			<a href="https://www.behance.net/ulysseslin" target="_blank"><h4>Design Portfolio</h4></a>
+		</div>
+	</div>
+	<div id="partials" class="page {{ pageClass }}" ng-view>
+	</div>
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/portfolio_home_style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+</body>
+</html>
