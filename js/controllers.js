@@ -1,6 +1,3 @@
-portfolio.controller('Portfolio',function($scope){
-	$scope.pageClass = 'intro';
-});
 portfolio.controller('Skills',function($scope){
 	$scope.lamp_list = ['Linux','Ajax','MySQL','PHP'];
 	$scope.mean_list = ['MongoDB + Mongoose','Express.js/Socket.io','Angular.js','Node.js'];
