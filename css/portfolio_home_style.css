@@ -19,7 +19,7 @@ a{
 	vertical-align: top;
 }
 .pink{
-	color: rgb(127,226,46);
+	color: rgb(255,0,136);
 }
 #personal_info,.smaller_frame,#profile img{
 	border-radius: 0.25em;
@@ -41,7 +41,7 @@ a{
 			font-size: 3em;
 		}
 	#site_links{
-		margin-top: 2em;
+		margin-top: 2vh;
 	}
 		#navbar_me a{
 			border-top: solid rgb(38,188,244) 0.0625em;
@@ -123,7 +123,7 @@ a{
 
 /*FRAME STYLING*/
 #partials{
-	margin-top: 5vh;
+	margin-top: 2vh;
 	height: 80vh;
 }
 	.smaller_frame{
@@ -131,12 +131,7 @@ a{
 		min-height: 80%;
 		padding: 1em;
 		margin: 5vh auto;
-		background-color: rgba(39,40,34,0.8);
-	}
-	.larger_frame{
-		padding-top: 2em;
-		width: 100%;
-		min-height: 80%;
+		background-color: rgba(39,40,34,0.9);
 	}
 	
 /*PROFILE STYLING*/
@@ -158,8 +153,11 @@ a{
 		font-size: 2em;
 		margin-bottom: 1em;
 	}
-	#skills input{
+	#input_text{
 		margin-left: 8%;
+	}
+	#skills input{
+		margin: 1em 0em;
 	}
 	#skills>div{
 		width: 25%;
@@ -169,8 +167,8 @@ a{
 		#skills ul{
 			margin-left: 2em;
 		}
-			#skills ul ul{
-				margin-left: 1em;
+			#skills li{
+				font-size: 1.5em;
 			}
 
 /*CONTACT STYLING*/
@@ -181,65 +179,87 @@ a{
 	}
 
 /*PROJECT STYLING*/
-	.wrapper{
-		padding: 2em;
-		background-size: 100% auto;
-		/*background-repeat: no-repeat;*/
+.frame{
+	padding: 2em 0.5em;
+}
+	.left{
+		width: 18%;
+		height: 100%;
+		padding: 0.5em;
 	}
-	.title_link{
-		text-decoration: none;
-		color: white;
-	}
-	.lamp h2,.mean h2,.rails h2{
-		font-size: 20vw;
-	}
-	.lamp h3,.mean h3,#rails_frame h3,.centered p:first-child,#skills h2{
-		font-size: 3em;
-	}
-	.lamp h4,.mean h4,.rails h4,#rails_demo p,#skills li{
-		font-size: 2em;
-	}
-	.centered{
-		width: 50%;
-		margin: 4em auto;
-	}
-	.centered p{
-		font-size: 1.5em;
-	}
-	.screenshots img{
+		.left h2{
+			font-size: 5vw;
+			text-align: center;
+		}
+		.left h3,.centered h3{
+			font-size: 2.5vw;
+		}
+		.left h3{
+			border-radius: 0.25em;
+			text-align: center;
+			background-color: rgb(39,40,34);
+		}
+		.left h4,.left li{
+			font-size: 1.5em;
+			margin-bottom: 1em;
+		}
+	.main{
 		width: 70%;
-		margin: 0em auto 2em;
+		height: 80vh;
+		overflow: hidden;
 	}
+		.main>img{
+			width: 100%;
+		}
+	.right{
+		width: 10%;
+	}
+		.thumbnail{
+			width: 100%;
+			height: 10vh;
+			margin: 0em 1em 0.25em 0em;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			opacity: 0.5;
+		}
+		.thumbnail:hover{
+			opacity: 1;
+			cursor: pointer;
+		}
+		.full_opacity{
+			opacity: 1;
+		}
+	.centered .fine{
+		font-size: 1em;
+	}
+		.centered{
+			width: 50%;
+			margin: 4em auto;
+		}
+		.centered ul{
+			padding-left: 1.65em;
+		}
+		.centered li{
+			font-size: 1.5em;
+		}
 
 /*LAMP STYLING*/
-	#lamp_title_wrapper{
-		background-image: url('../images/sku_0.png');
-	}
-	#lamp_title_wrapper,#lamp_title_wrapper .title_link{
-		color: black;
-	}
 	#lamp_frame{
 		background-color: rgb(2,10,36);
 	}
 
 /*MEAN STYLING*/
-	#mean_title_wrapper{
-		background-image: url('../images/munch_0.png');
-	}
 	#mean_frame{
 		background-color: rgb(89,166,61);
 	}
-	.mean *{
-		font-family: "Rockwell",serif;
-	}
+		#mean_frame *{
+			font-family: "Rockwell",serif;
+		}
+		#mean_frame .left h2{
+			font-size: 4vw;
+		}
 
 /*RAILS STYLING*/
-	#rails_title_wrapper{
-		background-image: url('../images/make_0.png');
-	}
 	#rails_frame{
 		background-color: rgb(233,87,63);
 	}
-		#rails_demo img{
-			margin-bottom: 1em;
-		}

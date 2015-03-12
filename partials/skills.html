@@ -1,6 +1,6 @@
 <div id="skills" class="smaller_frame" ng-controller="Skills">
 	<p>Favored languages: Javascript, Ruby, PHP</p>
-	<input type="text" placeholder="Search" ng-model="search">
+	<span id="input_text">Search: </span><input type="text" placeholder="Keyword" ng-model="search">
 	<br>
 	<div class="nestled">
 		<h2>LAMP</h2>
@@ -22,15 +22,15 @@
 	</div>
 	<br>
 	<div class="nestled">
-		<h2>BACK-END</h2>
-		<ul>
-			<li ng-repeat="back in back_list | filter:search">{{back}}</li>
-		</ul>
-	</div>
-	<div class="nestled">
 		<h2>FRONT-END</h2>
 		<ul>
 			<li ng-repeat="front in front_list | filter:search">{{front}}</li>
+		</ul>
+	</div>
+	<div class="nestled">
+		<h2>CONCEPTS</h2>
+		<ul>
+			<li ng-repeat="concept in concepts_list | filter:search">{{concept}}</li>
 		</ul>
 	</div>
 	<div class="nestled">

@@ -1,37 +1,28 @@
-<div id="rails_title_wrapper" class="rails align_center wrapper">
-	<h2><a class="title_link" href="https://make-gem.herokuapp.com/" target="_blank">MAKE</a></h2>
-	<h4>Ruby Gem & Demonstration Site<br>
-		Colleague: <a href="https://github.com/sarapple" target="_blank">Sara Wong</a><br>
-		Used: SQLite, WEBrick, Ruby on Rails
-	</h4>
-</div>
-<div id="rails_frame" class="larger_frame rails">
+<div id="rails_frame" class="frame" ng-controller="Projects">
+	<div class="info_screens">
+		<div class="left nestled">
+			<h2>MAKE</h2>
+			<h4>SQLite, WEBrick, Ruby on Rails, jQuery</h4>
+			<h4>[Ruby Gem & Demonstration Site]</h4>
+			<h4>MAKE produces tables and forms in Ruby on Rails with just a line of code in your controller, and one in your view.</h4>
+			<h3><a href="https://make-gem.herokuapp.com/" target="_blank">TRY THE APP</a></h3>
+		</div>
+		<div class="main nestled">
+			<img src="images/make_{{image}}.png">
+		</div>
+		<div class="right nestled">
+			<div class="thumbnail" ng-class="{'full_opacity':n==image}" ng-mouseover="change_image(n)" ng-repeat="n in [0,1,2,3,4]" ng-style="{'background-image':'url(images/make_{{n}}.png)'}"></div>
+		</div>
+	</div>
 	<div class="centered">
-		<p>MAKE produces tables and forms in Ruby on Rails with just a line of code in your controller, and one in your view.</p>
-	</div>
-	<div class="centered align_center">
-		<h3><a href="https://make-gem.herokuapp.com/" target="_blank">TRY THE GEM HERE.</a></h3>
-	</div>
-	<div class="centered">
-		<p>Personal contributions:</p>
-		<p>Splash page and home (extensive jQuery)</p>
-		<p>Clickable tree of gem methods (extensive jQuery and Rails)</p>
-		<p>Automated table creation based on database content (Rails, SQLite)</p>
-	</div>
-	<div id="rails_demo" class="align_center">
-		<h3>RUNDOWN</h3>
-		<p>Why type all this -></p>
-		<img src="images/make_1.png">
-		<br>
-		<p>Or even this -></p>
-		<img src="images/make_2.png">
-		<p>When all you need is this? -></p>
-		<img src="images/make_3.png">
-	</div>
-	<div class="screenshots align_center">
-		<h3>SCREENSHOTS</h3>
-		<img src="images/make_4.png" class="nestled">
-		<img src="images/make_5.png" class="nestled">
-		<img src="images/make_6.png" class="nestled">
+		<h3>Personal contributions:</h3>
+		<ul>
+			<li>Splash page and home (extensive jQuery)</li>
+			<li>Clickable tree of gem methods (extensive jQuery and Rails)</li>
+			<li>Automated table creation based on database content (Rails, SQLite)</li>
+		</ul>
+		<p class="fine">Colleague:
+			<a href="https://github.com/sarapple" target="_blank">Sara Wong</a>
+		</p>
 	</div>
 </div>
