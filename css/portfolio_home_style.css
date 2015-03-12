@@ -11,6 +11,9 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+a{
+	color: rgb(38,188,244);
+}
 .nestled,#site_links a{
 	display: inline-block;
 	vertical-align: top;
@@ -114,7 +117,7 @@ body{
 		to {left: 0em;}
 	}
 
-.align_center,#rails_frame h3{
+.align_center{
 	text-align: center;
 }
 
@@ -137,9 +140,6 @@ body{
 	}
 	
 /*PROFILE STYLING*/
-	#profile a,#lamp_title_wrapper a,#mean_title_wrapper a,#rails_frame a{
-		color: rgb(38,188,244);
-	}
 	#profile img{
 		float: left;
 		margin: 0em 1em 1em 0em;
@@ -166,12 +166,6 @@ body{
 		margin-left: 8%;
 		margin-bottom: 1em;
 	}
-		#skills h2{
-			font-size: 3em;
-		}
-		#skills li{
-			font-size: 2em;
-		}
 		#skills ul{
 			margin-left: 2em;
 		}
@@ -186,94 +180,66 @@ body{
 		margin: 3% auto;
 	}
 
+/*PROJECT STYLING*/
+	.wrapper{
+		padding: 2em;
+		background-size: 100% auto;
+		/*background-repeat: no-repeat;*/
+	}
+	.title_link{
+		text-decoration: none;
+		color: white;
+	}
+	.lamp h2,.mean h2,.rails h2{
+		font-size: 20vw;
+	}
+	.lamp h3,.mean h3,#rails_frame h3,.centered p:first-child,#skills h2{
+		font-size: 3em;
+	}
+	.lamp h4,.mean h4,.rails h4,#rails_demo p,#skills li{
+		font-size: 2em;
+	}
+	.centered{
+		width: 50%;
+		margin: 4em auto;
+	}
+	.centered p{
+		font-size: 1.5em;
+	}
+	.screenshots img{
+		width: 70%;
+		margin: 0em auto 2em;
+	}
+
 /*LAMP STYLING*/
+	#lamp_title_wrapper{
+		background-image: url('../images/sku_0.png');
+	}
+	#lamp_title_wrapper,#lamp_title_wrapper .title_link{
+		color: black;
+	}
 	#lamp_frame{
 		background-color: rgb(2,10,36);
 	}
-	#lamp_title_wrapper{
-		padding: 2em;
-		background-image: url('../images/sku_0.png');
-		background-size: 100% auto;
-		/*background-repeat: no-repeat;*/
-		color: black;
-	}
-		.lamp h2{
-			font-size: 20vw;
-		}
-		.lamp h3{
-			font-size: 3em;
-		}
-		.lamp h4{
-			font-size: 2em;
-		}
-		.lamp .centered p:not(:first-child){
-			font-size: 1.5em;
-		}
 
 /*MEAN STYLING*/
+	#mean_title_wrapper{
+		background-image: url('../images/munch_0.png');
+	}
 	#mean_frame{
 		background-color: rgb(89,166,61);
-	}
-	#mean_title_wrapper{
-		padding: 2em;
-		background-image: url('../images/munch_0.png');
-		background-size: 100% auto;
-		/*background-repeat: no-repeat;*/
 	}
 	.mean *{
 		font-family: "Rockwell",serif;
 	}
-		.mean h2{
-			font-size: 20vw;
-		}
-		.mean h3{
-			font-size: 3em;
-		}
-		.mean h4{
-			font-size: 2em;
-		}
-		.mean .centered p:not(:first-child){
-			font-size: 1.5em;
-		}
 
 /*RAILS STYLING*/
+	#rails_title_wrapper{
+		background-image: url('../images/make_0.png');
+	}
 	#rails_frame{
 		background-color: rgb(233,87,63);
 	}
-		#rails_frame h2{
-			font-size: 25vw;
-		}
-		#rails_subtitle{
-			width: 50%;
-			margin: 0em auto 4em;
-		}
-			#rails_subtitle img{
-				width: 20%;
-				margin-right: 2em;
-			}
-			#rails_frame h4{
-				font-size: 2vw;
-			}
-		#rails_frame h3{
-			font-size: 5em;
-		}
-		#rails_demo{
-			padding-top: 4em;
-		}
-			#rails_demo img{
-				margin-bottom: 1em;
-			}
-			#rails_demo p{
-				font-size: 2em;
-			}
-		.centered{
-			width: 50%;
-			margin: 4em auto;
-		}
-		.centered p{
-			font-size: 3em;
-		}
-		#rails_screens img{
-			width: 70%;
-			margin: 0em auto 2em;
+		#rails_demo img{
+			margin-bottom: 1em;
 		}
