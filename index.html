@@ -3,25 +3,37 @@
 <head>
 	<title>UL</title>
 </head>
-<body ng-app="portfolio">
+<body ng-app="portfolio" ng-controller="Navbar" ng-class="{'clouds':bg=='clouds','sku':bg=='sku','munch':bg=='munch','make':bg=='make'}">
 	<div id="site_links">
 		<div id="navbar_me" class="nestled">
-			<h4>Me</h4>
-			<a href="#/profile"><h4>Profile</h4></a>
-			<a href="#/skills"><h4>Skills</h4></a>
-			<a href="#/contact"><h4>Contact</h4></a>
+			<div class="nav_1" ng-show="hover!='me'" ng-mouseenter="hover='me'">
+				<h4>Me</h4>
+			</div>
+			<div class="nav_2" ng-show="hover=='me'" ng-mouseleave="hover=false">
+				<a href="#/profile" ng-click="bg='clouds'"><h4>Profile</h4></a>
+				<a href="#/skills" ng-click="bg='clouds'"><h4>Skills</h4></a>
+				<a href="#/contact" ng-click="bg='clouds'"><h4>Contact</h4></a>
+			</div>
 		</div>
 		<div id="navbar_projects" class="nestled">
-			<h4>Projects</h4>
-			<a href="#/lamp"><h4>PHP [LAMP]</h4></a>
-			<a href="#/mean"><h4>Javascript [MEAN]</h4></a>
-			<a href="#/rails"><h4>Ruby on Rails</h4></a>
+			<div class="nav_1" ng-show="hover!='projects'" ng-mouseenter="hover='projects'">
+				<h4>Projects</h4>
+			</div>
+			<div class="nav_2" ng-show="hover=='projects'" ng-mouseleave="hover=false">
+				<a href="#/lamp" ng-click="bg='sku'"><h4>PHP</h4></a>
+				<a href="#/mean" ng-click="bg='munch'"><h4>Javascript</h4></a>
+				<a href="#/rails" ng-click="bg='make'"><h4>Ruby</h4></a>
+			</div>
 		</div>
 		<div id="navbar_links" class="nestled">
-			<h4>Links</h4>
-			<a href="https://github.com/UlyssesLin" target="_blank"><h4>GitHub</h4></a>
-			<a href="https://www.linkedin.com/in/ulysseslin" target="_blank"><h4>LinkedIn</h4></a>
-			<a href="https://www.behance.net/ulysseslin" target="_blank"><h4>Design Portfolio</h4></a>
+			<div class="nav_1" ng-show="hover!='links'" ng-mouseenter="hover='links'">
+				<h4>Links</h4>
+			</div>
+			<div class="nav_2" ng-show="hover=='links'" ng-mouseleave="hover=false">
+				<a href="https://github.com/UlyssesLin" target="_blank"><h4>GitHub</h4></a>
+				<a href="https://www.linkedin.com/in/ulysseslin" target="_blank"><h4>LinkedIn</h4></a>
+				<a href="https://www.behance.net/ulysseslin" target="_blank"><h4>Design</h4></a>
+			</div>
 		</div>
 	</div>
 	<div id="partials" ng-view>

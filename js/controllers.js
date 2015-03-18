@@ -1,3 +1,7 @@
+portfolio.controller('Navbar',function($scope){
+	$scope.hover=false;
+	$scope.bg='clouds';
+});
 portfolio.controller('Skills',function($scope){
 	$scope.lamp_list = ['Ajax','MySQL','CodeIgniter'];
 	$scope.mean_list = ['MongoDB','Mongoose','Express.js','AngularJS','Node.js','Socket.io'];

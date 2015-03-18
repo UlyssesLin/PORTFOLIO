@@ -6,10 +6,21 @@
 }
 body{
 	color: white;
+}
+.clouds{
 	background-image: url('../images/sky_bg.jpg');
 	background-size: 130% auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+.sku{
+	background-color: rgb(2,10,36);
+}
+.munch{
+	background-color: rgb(89,166,61);
+}
+.make{
+	background-color: rgb(233,87,63);
 }
 a{
 	color: rgb(38,188,244);
@@ -40,42 +51,61 @@ a{
 		#personal_info h2{
 			font-size: 3em;
 		}
-	#site_links{
-		margin-top: 2vh;
+#site_links{
+	width: 90%;
+	padding: 0em 1vw;
+	margin: 0em auto;
+}
+	.nav_1{
+		width: 27vw;
+		height: 1.5em;
+		background-color: rgba(39,40,34,0.8);
+		border-bottom-left-radius: 0.25em;
+		border-bottom-right-radius: 0.25em;
 	}
-		#navbar_me a{
-			border-top: solid rgb(38,188,244) 0.0625em;
-		}
-		#navbar_me a:hover{
-			color: rgb(38,188,244);
-		}
-		#navbar_projects a{
-			border-top: solid rgb(255,0,136) 0.0625em;
-		}
-		#navbar_projects a:hover{
-			color: rgb(255,0,136);
-		}
-		#navbar_links a{
-			border-top: solid rgb(127,226,46) 0.0625em;
-		}
-		#navbar_links a:hover{
-			color: rgb(127,226,46);
-		}
-		#site_links div>h4{
-			color: rgb(220,220,220);
-		}
-		#site_links a{
-			height: 1.5em;
-			width: 10vw;
-			color: white;
-			text-decoration: none;
-			border-top-left-radius: 0.25em;
-			border-top-right-radius: 0.25em;
-			background: linear-gradient(rgba(39,40,34,0.2),rgba(39,40,34,0));
-		}
-		#site_links a:hover{
-			background: linear-gradient(rgba(39,40,34,0.8),rgba(39,40,34,0.8)80%,rgba(39,40,34,0.0)100%);
-		}
+	.nav_2{
+		width: 27vw;
+		height: 1.5em;
+	}
+	#navbar_me a{
+		border-bottom: solid rgb(38,188,244) 0.0625em;
+	}
+	#navbar_me a:hover{
+		color: rgb(38,188,244);
+	}
+	#navbar_projects a{
+		border-bottom: solid rgb(255,0,136) 0.0625em;
+	}
+	#navbar_projects a:hover{
+		color: rgb(255,0,136);
+	}
+	#navbar_links a{
+		border-bottom: solid rgb(127,226,46) 0.0625em;
+	}
+	#navbar_links a:hover{
+		color: rgb(127,226,46);
+	}
+	#site_links div>h4{
+		color: rgb(220,220,220);
+	}
+	#site_links a{
+		height: 1.5em;
+		width: 32%;
+		color: white;
+		text-decoration: none;
+		border-bottom-left-radius: 0.25em;
+		border-bottom-right-radius: 0.25em;
+		background: linear-gradient(rgba(39,40,34,0.2),rgba(39,40,34,0));
+	}
+/*	#site_links a:first-child{
+		float: left;
+	}
+	#site_links a:last-child{
+		float: right;
+	}*/
+	#site_links a:hover{
+		background-color: rgba(39,40,34,0.8);
+	}
 
 /*PARTIAL STYLING*/
 #site_links,#personal_info,#initials{
@@ -127,9 +157,9 @@ a{
 	height: 80vh;
 }
 	.smaller_frame{
-		width: 70%;
+		width: 90%;
 		min-height: 80%;
-		padding: 1em;
+		padding: 1vw;
 		margin: 5vh auto;
 		background-color: rgba(39,40,34,0.9);
 	}
@@ -164,6 +194,9 @@ a{
 		margin-left: 8%;
 		margin-bottom: 1em;
 	}
+		#skills h2{
+			font-size: 2em;
+		}
 		#skills ul{
 			margin-left: 2em;
 		}
@@ -174,7 +207,7 @@ a{
 /*CONTACT STYLING*/
 	#contact p{
 		width: 30%;
-		font-size: 2em;
+		font-size: 2vw;
 		margin: 3% auto;
 	}
 
@@ -182,6 +215,9 @@ a{
 .frame{
 	padding: 2em 0.5em;
 }
+	.frame p{
+		font-size: 1vw;
+	}
 	.left{
 		width: 18%;
 		height: 100%;
@@ -200,27 +236,28 @@ a{
 			background-color: rgb(39,40,34);
 		}
 		.left h4,.left li{
-			font-size: 1.5em;
 			margin-bottom: 1em;
 		}
 	.main{
-		width: 70%;
+		width: 69%;
 		height: 80vh;
 		overflow: hidden;
 	}
 		.main>img{
 			width: 100%;
+			border-radius: 0.25em;
 		}
 	.right{
-		width: 10%;
+		width: 9%;
 	}
 		.thumbnail{
 			width: 100%;
 			height: 10vh;
 			margin: 0em 1em 0.25em 0em;
-			background-size: 100% auto;
+			background-size: 150% auto;
 			background-repeat: no-repeat;
 			opacity: 0.5;
+			border-radius: 0.25em;
 		}
 		.thumbnail:hover{
 			opacity: 1;
@@ -230,17 +267,17 @@ a{
 			opacity: 1;
 		}
 	.centered .fine{
-		font-size: 1em;
+		font-size: 1vw;
 	}
 		.centered{
 			width: 50%;
-			margin: 4em auto;
+			margin: 4vh auto;
 		}
 		.centered ul{
 			padding-left: 1.65em;
 		}
-		.centered li{
-			font-size: 1.5em;
+		.left h4,.left li,.centered li{
+			font-size: 1.5vw;
 		}
 
 /*LAMP STYLING*/
